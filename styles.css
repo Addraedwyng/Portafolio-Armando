@@ -1,0 +1,43 @@
+body{
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+h1{
+    color: rgb(5, 87, 5);
+}
+
+#navbar a{
+    background-color: beige;
+}
+   
+    
+
+    #about-me {
+        background-image:url(/images/1200px-Center_of_the_Milky_Way_Galaxy_IV_–_Composite.jpg)
+    }
+    ul li{
+        list-style: none;
+    }
+
+    ul li::before{
+        content:"-"
+    }
+
+    .secondary-titles{
+        background: fuchsia;
+        width: 300px;
+        height: 50px;
+        text-align: center;
+        border-radius: 50px 20px 5px 100px;
+        box-shadow: 10px 10px 4px rgb(213, 119, 119);
+    }
+
+    .secondary-titles:hover{
+        background: rebeccapurple;
+        box-shadow: 10px 10px 4px aquamarine;
+    }
+
+    .paragraph::first-line{
+        color: cornflowerblue;
+    }
