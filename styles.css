@@ -1,43 +1,75 @@
 body{
-    background: rgb(63,94,251);
-background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    margin: 0px;
+    padding:0px;
+    background: linear-gradient(0deg, rgb(218, 241, 241) 0%, rgba(242, 228, 246, 0.705) 100%);
 }
 
 h1{
-    color: rgb(5, 87, 5);
+    color: #fac424;
+    padding: 5px;
+    margin: 10px;
+}
+
+#navbar{
+    background: rgb(195, 236, 227);
 }
 
 #navbar a{
-    background-color: beige;
+    color: rgb(0, 0, 0);
 }
-   
-    
 
-    #about-me {
-        background-image:url(/images/1200px-Center_of_the_Milky_Way_Galaxy_IV_–_Composite.jpg)
-    }
-    ul li{
-        list-style: none;
-    }
+#about-me{
+    background-image: linear-gradient(rgba(255,255,255, .5), rgba(255,255,255, .5)),;
+    text-align: center;
+    width: 100vw;
+}
+.pretty-me{
+    width: 300px;
+    height: 200px;
+    border: 10px solid #fe6464;
+}
 
-    ul li::before{
-        content:"-"
-    }
+ul li{
+    list-style: none;
+} 
 
-    .secondary-titles{
-        background: fuchsia;
-        width: 300px;
-        height: 50px;
-        text-align: center;
-        border-radius: 50px 20px 5px 100px;
-        box-shadow: 10px 10px 4px rgb(213, 119, 119);
-    }
+ul li::before{
+    content: "*"
+}
+.secondary-titles{
+    background: rgb(74, 3, 155);
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 10px 10px 4px #fe6464;
+}
 
-    .secondary-titles:hover{
-        background: rebeccapurple;
-        box-shadow: 10px 10px 4px aquamarine;
-    }
+.secondary-titles:hover{
+    background: #F0FF42;
+    box-shadow: 10px 10px 4px #9dfe64;
+}
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
-    .paragraph::first-line{
-        color: cornflowerblue;
-    }
+.card-class{
+    margin: 20px;
+    width: 250px;
+    height: 100px;
+    border: 10px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
