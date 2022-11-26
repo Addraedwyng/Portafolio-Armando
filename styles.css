@@ -1,32 +1,73 @@
 body{
     margin: 0px;
     padding:0px;
-    background: linear-gradient(0deg, rgb(218, 241, 241) 0%, rgba(242, 228, 246, 0.705) 100%);
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(242, 228, 246, 0.705) 100%);
 }
 
 h1{
-    color: #fac424;
+    color: #000000;
     padding: 5px;
     margin: 10px;
 }
 
-#navbar{
-    background: rgb(195, 236, 227);
+.title{
+background-color: plum;
+width: 100vw;
+animation-name: titleColorChange;
+animation-duration: 4s;
+animation-iteration-count: infinite;
 }
+
+@keyframes titleColorChange {
+    from{background-color: plum;}
+    to{background-color: aquamarine;}
+}
+
+
 
 #navbar a{
     color: rgb(0, 0, 0);
+    text-align: center;
 }
 
 #about-me{
     background-image: linear-gradient(rgba(255,255,255, .5), rgba(255,255,255, .5)),;
     text-align: center;
     width: 100vw;
+    
 }
-.pretty-me{
+
+.primary-titles{
+    background: rgb(183, 131, 242);
     width: 300px;
-    height: 200px;
-    border: 10px solid #fe6464;
+    height: 30px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 10px 10px 4px #6b2798;
+}
+
+.primary-titles:hover{
+    background: #F0FF42;
+    box-shadow: 10px 10px 4px #9dfe64;
+}
+    .pretty-me{
+    width: 250px;
+    height: 150px;
+    border: 5px solid #2c0775;
+    
+}
+
+
+@keyframes spinninPrettyMe {
+    0%{
+        border: 15px solid blue;
+    }
+    50%{
+        rotate: -360deg;
+    }
+    100%{
+        scale: 2;
+    }
 }
 
 ul li{
@@ -37,17 +78,18 @@ ul li::before{
     content: "*"
 }
 .secondary-titles{
-    background: rgb(74, 3, 155);
+    background: rgb(183, 131, 242);
     width: 300px;
-    height: 50px;
+    height: 30px;
     text-align: center;
     border-radius: 50px;
-    box-shadow: 10px 10px 4px #fe6464;
+    box-shadow: 10px 10px 4px #6b2798;
 }
 
 .secondary-titles:hover{
     background: #F0FF42;
     box-shadow: 10px 10px 4px #9dfe64;
+    
 }
 .card-container{
     display: flex;
@@ -59,12 +101,17 @@ ul li::before{
     margin: 20px;
     width: 250px;
     height: 100px;
-    border: 10px solid black;
-    border-radius: 20px;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-duration: 3;
+    transition-delay: 2;
+
+
 }
+
 
 #contact{
     height: 200px;
@@ -72,4 +119,29 @@ ul li::before{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.contactButton{
+    border: 2px solid yellow;
+    background-color: green;
+    color: white;
+    animation-name: contactButtonAnim;
+    animation-duration: 2s;
+    animation-duration: alternate;
+}
+
+@keyframes contactButtonAnim {
+    5%{
+        rotate: 10deg;
+    }
+    10%{
+        rotate: 0deg;
+    }
+    50%{
+        translate: -20deg;
+        background-color: #fe6464;
+    }
+    100%{
+        scale: 4;
+    }
 }
